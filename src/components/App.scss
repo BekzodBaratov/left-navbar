@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+///////////////////////////////
+.contain {
+  min-height: 150vh;
+}
+li {
+  list-style: none;
+}
+
+.nav {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1rem 2rem #0003;
+  width: 20vw;
+  padding: 1%;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  .navImg {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-image: url("../images/rocco-roxie-employee-headshots-4.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  img {
+    width: 7vw;
+    clip-path: circle(2.4rem at center);
+    box-shadow: 0 1rem 2rem #000;
+  }
+
+  .profil {
+    height: 8vh;
+    border-bottom: 1px solid #0002;
+  }
+
+  .flex {
+    justify-content: space-between;
+  }
+  .profilText {
+    h3 {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+  }
+  .bar {
+    font-size: 1.8rem;
+    margin-right: 0.6rem;
+  }
+  .menu {
+    margin-top: 0rem;
+  }
+  .card {
+    transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    justify-content: flex-start;
+    gap: 1.6rem;
+    color: #555;
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    cursor: pointer;
+    align-items: flex-start;
+  }
+  .card:hover {
+    background-color: #ddd;
+    border-radius: 0.5rem;
+  }
+  .card:active,
+  .card:focus {
+    background-color: #00bb80;
+  }
+  .right {
+    text-align: right;
+  }
+  .circleArrow {
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem #0003;
+    margin: 0.3rem;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .circleArrow i {
+    font-size: 1.6rem;
+    padding: 0 0.4rem;
+    color: #555;
+    margin: 1rem;
+  }
+}
+.navClose {
+  width: 5.5vw;
+}
+
+.circleArrowClose {
+  transform: rotateZ(0deg) translateX(3.5rem);
+}
+.circleArrowOpen {
+  transform: rotateZ(180deg) translateX(-3.2rem);
+}
+.titleMain {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.cardTitle,
+.fa-chevron-down,
+.option {
+  transition: all 0.3s ease-in-out;
+}
+.card:hover .cardTitle,
+.card:hover .fa-chevron-down,
+.option:hover {
+  transform: translateX(1rem);
+}
+.option {
+  margin: 0.3rem;
+  padding: 0.6rem;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.option:hover {
+  background-color: #ddd;
+}
+.options,
+.option {
+  transition: all 0.3s ease-in-out;
+}
